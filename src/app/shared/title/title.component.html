@@ -1,0 +1,26 @@
+<section class="ptb-120 gradient-bg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7 col-lg-8">
+                <div class="hero-content-wrap text-white text-center position-relative">
+                    <h1 class="text-white">{{props[0].titulo}}</h1>
+                    <p class="lead">{{props[0].subtitulo}}</p>
+                </div>
+                <div class="network-map-wrap mt-5" [hidden]="!props[0].mapa">
+                    <ul class="custom-map-location">
+                        <li style="top: 32%; left: 22.5%;">
+                            <span data-toggle="tooltip" data-placement="top" title="Guatemala"></span>
+                        </li>
+                        <li style="top: 42%; left: 45%;">
+                            <span data-toggle="tooltip" data-placement="top" title="Honduras"></span>
+                        </li>
+                        <li style="top: 80%; left: 50%;">
+                            <span data-toggle="tooltip" data-placement="top" title="Costa Rica"></span>
+                        </li>
+                    </ul>
+                    <img src="./assets/img/map-dark.png" alt="location map img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
