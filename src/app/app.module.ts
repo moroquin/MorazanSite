@@ -8,6 +8,7 @@ import { PreloaderComponent } from './shared/preloader/preloader.component';
 import { IndexComponent } from './pages/index/index.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TitleComponent } from './shared/title/title.component';
+import { LogosinstitucionesComponent } from './shared/logosinstituciones/logosinstituciones.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TitleComponent } from './shared/title/title.component';
     FooterComponent,
     PreloaderComponent,
     IndexComponent,
-    TitleComponent
+    TitleComponent,
+    LogosinstitucionesComponent
   ],
   imports: [
     BrowserModule,

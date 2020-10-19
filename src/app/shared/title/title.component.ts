@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { InfoProyectoService } from '../../services/info-proyecto.service';
 
 @Component({
   selector: 'app-title',
@@ -7,8 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TitleComponent implements OnInit {
   @Input('props') props: {titulo: '', subtitulo: '', mapa: true};
+
+  heightlogos: 80;
   
-  constructor() {}
+  constructor() {
+    
+  }
 
   ngOnInit(): void {}
 }

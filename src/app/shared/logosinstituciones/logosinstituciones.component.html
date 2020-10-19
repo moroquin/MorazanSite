@@ -1,0 +1,12 @@
+<div class="domain-name-block ptb-20 gray-light-bg">
+    <div class="container">
+        <div class="row justify-content-center align-items-center flex-wrap">
+            <ul class="list-inline domain-list-wrap">
+                <li class="list-inline-item m-2" *ngFor="let logo of logos">
+                    <a href="{{logo[1]}}" target="_blank">
+                        <img src="{{logo[0]}}" alt="domain" [style.height.px]="heightlogo" /> </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
