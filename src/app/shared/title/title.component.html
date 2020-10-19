@@ -9,13 +9,13 @@
                 <div class="network-map-wrap mt-5" [hidden]="!props[0].mapa">
                     <ul class="custom-map-location">
                         <li style="top: 32%; left: 22.5%;">
-                            <span data-toggle="tooltip" data-placement="top" title="Guatemala"></span>
+                            <a href="{{getLink('gt')}}"><span data-toggle="tooltip" data-placement="top" title="Guatemala"></span></a>
                         </li>
                         <li style="top: 42%; left: 45%;">
-                            <span data-toggle="tooltip" data-placement="top" title="Honduras"></span>
+                            <a href="{{getLink('hn')}}"><span data-toggle="tooltip" data-placement="top" title="Honduras"></span></a>
                         </li>
                         <li style="top: 80%; left: 50%;">
-                            <span data-toggle="tooltip" data-placement="top" title="Costa Rica"></span>
+                            <a href="{{getLink('cr')}}"><span data-toggle="tooltip" data-placement="top" title="Costa Rica"></span></a>
                         </li>
                     </ul>
                     <img src="./assets/img/map-dark.png" alt="location map img-responsive">

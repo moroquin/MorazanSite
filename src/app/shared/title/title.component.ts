@@ -15,5 +15,9 @@ export class TitleComponent implements OnInit {
     
   }
 
+  getLink(country:string){
+    return "#";
+  }
+
   ngOnInit(): void {}
 }
