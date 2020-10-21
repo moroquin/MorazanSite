@@ -8,7 +8,7 @@ import { TeamcountryComponent } from './pages/teamcountry/teamcountry.component'
 const routes: Routes = [
   { path: 'index', component: IndexComponent },
   { path: 'team', component: TeamComponent },
-  {path:'teamcountry/:ct', component: TeamcountryComponent},
+  {path:'teamcountry/:id', component: TeamcountryComponent},
   { path: '', pathMatch: 'full', redirectTo: 'index' },
   { path: '**', pathMatch: 'full', redirectTo: 'index' },
 ];

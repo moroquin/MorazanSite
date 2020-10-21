@@ -20,7 +20,7 @@ export class TeamComponent implements OnInit {
     titulo: 'TEAM',
     subtitulo:
       'The work team is made up of students and professionals from Honduras, Costa Rica and Guatemala.',
-    mapa: true,
+    mapa: false,
   };
 
   teamGt:equipo[];

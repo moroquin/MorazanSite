@@ -9,7 +9,7 @@ import { InfoProyectoService } from '../../services/info-proyecto.service';
 export class TitleComponent implements OnInit {
   @Input('props') props: { titulo: ''; subtitulo: ''; mapa: true };
 
-  heightlogos: 80;
+  heightlogo: 80;
 
   constructor() {}
 

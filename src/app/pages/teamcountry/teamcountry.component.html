@@ -1,1 +1,38 @@
 <app-title [props]=[propiedades]></app-title>
+
+<!--blog grid section start-->
+<section class="our-blog-section ptb-100 ">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4" *ngFor="let member of team">
+                <div class="single-blog-article rounded bg-white border d-block mt-4">
+
+                    <div class="blog-img mb-2">
+                        <img src="{{member.img | imageteam}}" class="rounded-top img-fluid" alt="blog">
+                    </div>
+
+                    <div class="blog-content-wrap p-4">
+
+                        <div class="article-heading">
+                            <h3 class="h5 mb-0"> <i>{{member.titulo}}</i>{{member.nombre}}</h3>
+                            <span> {{member.rol}}</span>
+                        </div>
+                        <span class="border-shape my-3"></span>
+                        <p>{{member.descripcion}}</p>
+
+
+                        <div class="article-footer d-flex align-items-center justify-content-between">
+                            <div class="article-comments">
+                                <span><i class="fas fa-comment mr-1"></i> 34 Comments</span>
+                            </div>
+                            <div class="article-user">
+                                <span class="fas fa-user"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--blog grid section end-->
