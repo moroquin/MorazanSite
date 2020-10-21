@@ -1,0 +1,7 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
+.tooltip.in {
+    opacity: 1!important;
+}

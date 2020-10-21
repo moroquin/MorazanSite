@@ -9,6 +9,10 @@ import { IndexComponent } from './pages/index/index.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TitleComponent } from './shared/title/title.component';
 import { LogosinstitucionesComponent } from './shared/logosinstituciones/logosinstituciones.component';
+import { ImageteamPipe } from './pipes/imageteam.pipe';
+import { TeamComponent } from './pages/team/team.component';
+
+import { TeamcountryComponent } from './pages/teamcountry/teamcountry.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +22,13 @@ import { LogosinstitucionesComponent } from './shared/logosinstituciones/logosin
     PreloaderComponent,
     IndexComponent,
     TitleComponent,
-    LogosinstitucionesComponent
+    LogosinstitucionesComponent,
+    ImageteamPipe,
+    TeamComponent,
+    TeamcountryComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

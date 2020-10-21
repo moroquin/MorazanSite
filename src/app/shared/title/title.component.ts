@@ -7,16 +7,14 @@ import { InfoProyectoService } from '../../services/info-proyecto.service';
   styleUrls: ['./title.component.css'],
 })
 export class TitleComponent implements OnInit {
-  @Input('props') props: {titulo: '', subtitulo: '', mapa: true};
+  @Input('props') props: { titulo: ''; subtitulo: ''; mapa: true };
 
   heightlogos: 80;
-  
-  constructor() {
-    
-  }
 
-  getLink(country:string){
-    return "#";
+  constructor() {}
+
+  getLink(country: string) {
+    return '#';
   }
 
   ngOnInit(): void {}
