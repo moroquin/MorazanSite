@@ -1,0 +1,49 @@
+<app-title [props]=[propiedades]></app-title>
+
+
+
+
+
+<!--feature section start-->
+<section id="features" class="feature-tab-section ptb-100 ">
+    <div class="container">
+        <div class="row justify-content-center" *ngFor="let institucion of contactos">
+            <div>
+                <h2>{{institucion.institucion}}</h2>
+                <p></p>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-12 order-lg-last align-self-center">
+                    <div class="image-box fadein text-xl-right text-center">
+                        <img src="{{institucion.logo | imagelogo}}" alt="wp-hosting" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-8 col-12 order-xl-first">
+
+                    <div class="row pt-2">
+                        <div class="item" *ngFor="let member of institucion.miembros">
+                            <div class="border single-review-wrap bg-white p-4 m-3">
+                                <div class="review-body">
+                                    <h5>{{member.cargo}}</h5>
+                                    <p>{{member.rol}}</p>
+                                </div>
+                                <div class="review-author d-flex align-items-center">
+                                    <div class="author-avatar">
+                                        <img src="{{member.img | imageteam}}" width="64" alt="author" class="rounded-circle shadow-sm img-fluid mr-3" />
+                                        <span>“</span>
+                                    </div>
+                                    <div class="review-info">
+                                        <h6 class="mb-0">{{member.nombre}}</h6>
+                                        <span>{{member.correo}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--feature section end-->

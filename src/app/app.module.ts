@@ -13,6 +13,10 @@ import { ImageteamPipe } from './pipes/imageteam.pipe';
 import { TeamComponent } from './pages/team/team.component';
 
 import { TeamcountryComponent } from './pages/teamcountry/teamcountry.component';
+import { MissiontecComponent } from './pages/missiontec/missiontec.component';
+import { MissionscComponent } from './pages/missionsc/missionsc.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { ImagelogoPipe } from './pipes/imagelogo.pipe';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,10 @@ import { TeamcountryComponent } from './pages/teamcountry/teamcountry.component'
     ImageteamPipe,
     TeamComponent,
     TeamcountryComponent,
+    MissiontecComponent,
+    MissionscComponent,
+    ContactComponent,
+    ImagelogoPipe,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
