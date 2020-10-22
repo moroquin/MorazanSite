@@ -6,7 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./missiontec.component.css']
 })
 export class MissiontecComponent implements OnInit {
-
+  propiedades = {
+    titulo: 'TECHNOLOGICAL MISSION',
+    subtitulo:
+      'The project will follow the project life cycle established by the NASA Systems Engineering Manual.',
+    mapa: false,
+  };
   constructor() { }
 
   ngOnInit(): void {

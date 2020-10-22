@@ -26,13 +26,34 @@
                         <!--home end-->
 
 
-
-
-
-
-                        <!--pages start-->
+                        <!--information start-->
                         <li class="nav-item hs-has-sub-menu custom-nav-item">
-                            <a id="pagesMegaMenu" class="nav-link custom-nav-link main-link-toggle" href="javascript:void(0);" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Team</a>
+                            <a id="pagesMegaMenu" class="nav-link custom-nav-link main-link-toggle" href="javascript:void(0);" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Information</a>
+
+                            <!-- Pages - Submenu -->
+                            <ul id="pagesSubMenu" class="hs-sub-menu main-sub-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;">
+                                <li class="nav-item submenu-item">
+                                    <a class="nav-link sub-menu-nav-link" [routerLink]="['about']">About the project</a>
+                                </li>
+                                <li class="nav-item submenu-item">
+                                    <a class="nav-link sub-menu-nav-link" [routerLink]="['missiontec']">The Technological Mission</a>
+                                </li>
+                                <li class="nav-item submenu-item">
+                                    <a class="nav-link sub-menu-nav-link" [routerLink]="['missionsc']">The Scientific Mission</a>
+                                </li>
+                            </ul>
+                            <!-- End Pages - Submenu -->
+                        </li>
+                        <!--information end-->
+
+
+
+
+
+
+                        <!--team start-->
+                        <li class="nav-item hs-has-sub-menu custom-nav-item">
+                            <a id="pagesMegaMenu" class="nav-link custom-nav-link main-link-toggle" href="javascript:void(0);" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Team work</a>
 
                             <!-- Pages - Submenu -->
                             <ul id="pagesSubMenu" class="hs-sub-menu main-sub-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;">
@@ -51,7 +72,7 @@
                             </ul>
                             <!-- End Pages - Submenu -->
                         </li>
-                        <!--pages end-->
+                        <!--team end-->
 
                         <!--concact start-->
                         <li class="nav-item hs-has-sub-menu custom-nav-item" routerLinkActive="active">

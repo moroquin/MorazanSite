@@ -1,4 +1,3 @@
-import { CastExpr } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 
 interface equipo {
@@ -22,6 +21,7 @@ export class InfoProyectoService {
     ['Kyutceh-Logo.png', 'https://www.kyutech.ac.jp/english/'],
     ['SICA_Logo.png', 'https://www.sica.int/'],
     ['UNOOSA_Logo.png', 'https://www.unoosa.org/'],
+    ['astracodex_Logo.png','https://sites.google.com/astracodex.com/astra-codex/']
   ];
 
   private contactos = [
@@ -121,7 +121,21 @@ export class InfoProyectoService {
   private equipoGt: equipo[] = [
     {
       nombre: 'Guate',
-      titulo: 'Ing. ',
+      titulo: '. ',
+      rol: 'mi rol',
+      img: '',
+      descripcion: ' ',
+    },
+    {
+      nombre: 'Guate',
+      titulo: '. ',
+      rol: 'mi rol',
+      img: '',
+      descripcion: ' ',
+    },
+    {
+      nombre: 'Guate',
+      titulo: '. ',
       rol: 'mi rol',
       img: '',
       descripcion: ' ',
@@ -131,7 +145,21 @@ export class InfoProyectoService {
   private equipoHn: equipo[] = [
     {
       nombre: 'Honduras',
-      titulo: 'Ing. ',
+      titulo: '. ',
+      rol: 'mi rol',
+      img: '',
+      descripcion: ' ',
+    },
+    {
+      nombre: 'Honduras',
+      titulo: '. ',
+      rol: 'mi rol',
+      img: '',
+      descripcion: ' ',
+    },
+    {
+      nombre: 'Honduras',
+      titulo: '. ',
       rol: 'mi rol',
       img: '',
       descripcion: ' ',
@@ -141,7 +169,21 @@ export class InfoProyectoService {
   private equipoCr: equipo[] = [
     {
       nombre: 'Costa Rica',
-      titulo: 'Ing. ',
+      titulo: '. ',
+      rol: 'mi rol',
+      img: '',
+      descripcion: ' ',
+    },
+    {
+      nombre: 'Costa Rica',
+      titulo: '. ',
+      rol: 'mi rol',
+      img: '',
+      descripcion: ' ',
+    },
+    {
+      nombre: 'Costa Rica',
+      titulo: '. ',
       rol: 'mi rol',
       img: '',
       descripcion: ' ',
@@ -166,7 +208,7 @@ export class InfoProyectoService {
         return this.equipoCr;
         break;
       default:
-        return [...this.equipoGt, ...this.equipoHn, ...this.equipoCr];
+        return [...this.equipoHn, ...this.equipoGt,  ...this.equipoCr];
     }
 
     return this.equipoGt;

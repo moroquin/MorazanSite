@@ -17,6 +17,9 @@ import { MissiontecComponent } from './pages/missiontec/missiontec.component';
 import { MissionscComponent } from './pages/missionsc/missionsc.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ImagelogoPipe } from './pipes/imagelogo.pipe';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { ImagegeneralPipe } from './pipes/imagegeneral.pipe';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,9 @@ import { ImagelogoPipe } from './pipes/imagelogo.pipe';
     MissionscComponent,
     ContactComponent,
     ImagelogoPipe,
+    SidebarComponent,
+    ImagegeneralPipe,
+    AboutComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
