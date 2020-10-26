@@ -1,0 +1,39 @@
+<!--blog details section start-->
+<div class="module ptb-40">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8">
+                <!-- Post-->
+                <article class="post">
+                    <div *ngFor="let item of infopost[0]">
+                        <div *ngIf="item.imagen" class="post-preview"><img src="{{item.imagen | imagegeneral}}" alt="article" class="img-fluid" /></div>
+                        <div class="post-wrapper">
+                            <div class="post-header">
+                                <h1 class="post-title">{{item.titulo}}</h1>
+                                <ul class="post-meta">
+                                    <li>{{item.fecha}}</li>
+                                </ul>
+                            </div>
+                            <div class="post-content">
+                                <app-post-content [contenido]=[item.contenido]></app-post-content>
+                            </div>
+                            <div class="post-footer">
+                                <!--     <div class="post-tags"><a href="#">Lifestyle</a><a href="#">Music</a><a href="#">News</a><a href="#">Travel</a></div>-->
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Post end-->
+
+                <!-- Comments area->
+                <app-post-comment></app-post-comment>
+                < ! - - Comments area end-->
+            </div>
+
+            <app-post-sidebar class="col-lg-4 col-md-4"></app-post-sidebar>
+
+
+        </div>
+    </div>
+</div>
+<!--blog details section end-->

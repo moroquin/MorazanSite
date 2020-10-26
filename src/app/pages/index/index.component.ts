@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { InfoProyectoService } from '../../services/info-proyecto.service';
+import {propiedadesTitulo }  from '../../shared/interfaces/tituloInterface';
 
 @Component({
   selector: 'app-index',
@@ -7,7 +7,7 @@ import { InfoProyectoService } from '../../services/info-proyecto.service';
   styleUrls: ['./index.component.css'],
 })
 export class IndexComponent implements OnInit {
-  propiedades = {
+  propiedades:propiedadesTitulo = {
     titulo: 'MORAZAN SAT',
     subtitulo:
       'Project for the integration of the Central American Nations through the collaboration in outer space.',

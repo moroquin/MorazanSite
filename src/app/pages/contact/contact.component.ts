@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { InfoProyectoService } from '../../services/info-proyecto.service';
+import {propiedadesTitulo }  from '../../shared/interfaces/tituloInterface';
 
 @Component({
   selector: 'app-contact',
@@ -7,7 +8,7 @@ import { InfoProyectoService } from '../../services/info-proyecto.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  propiedades = {
+  propiedades:propiedadesTitulo = {
     titulo: 'CONTACT MORAZAN SAT',
     subtitulo:
       'Project for the integration of the Central American Nations through the collaboration in outer space.',
@@ -18,6 +19,7 @@ export class ContactComponent implements OnInit {
 
   constructor(private info:InfoProyectoService) { 
     this.contactos = info.getContact();
+    console.log(this.contactos);
   }
 
   ngOnInit(): void {

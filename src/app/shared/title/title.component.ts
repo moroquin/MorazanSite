@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { InfoProyectoService } from '../../services/info-proyecto.service';
+import { propiedadesTitulo } from '../interfaces/tituloInterface';
+
 
 @Component({
   selector: 'app-title',
@@ -7,9 +8,9 @@ import { InfoProyectoService } from '../../services/info-proyecto.service';
   styleUrls: ['./title.component.css'],
 })
 export class TitleComponent implements OnInit {
-  @Input('props') props: { titulo: ''; subtitulo: ''; mapa: true };
+  @Input('props') props: propiedadesTitulo;
 
-  heightlogo: 80;
+  heightlogo: 25;
 
   constructor() {}
 

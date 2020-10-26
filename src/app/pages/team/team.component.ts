@@ -1,14 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { InfoProyectoService } from '../../services/info-proyecto.service';
-
-interface equipo {
-  nombre: string;
-  titulo: string;
-  rol: string;
-  img: string;
-  descripcion: string;
-}
-
+import {  miembro } from '../../shared/interfaces/teamInterface';
+import {propiedadesTitulo }  from '../../shared/interfaces/tituloInterface';
 
 @Component({
   selector: 'app-team',
@@ -16,16 +9,16 @@ interface equipo {
   styleUrls: ['./team.component.css']
 })
 export class TeamComponent implements OnInit {
-  propiedades = {
+  propiedades:propiedadesTitulo = {
     titulo: 'TEAM',
     subtitulo:
       'The work team is made up of students and professionals from Honduras, Costa Rica and Guatemala.',
     mapa: false,
   };
 
-  teamGt:equipo[];
-  teamHn:equipo[];
-  teamCr:equipo[];
+  teamGt:miembro[];
+  teamHn:miembro[];
+  teamCr:miembro[];
 
   constructor(private info:InfoProyectoService) {
     this.teamGt = info.getTeam('gt');

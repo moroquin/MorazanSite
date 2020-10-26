@@ -1,0 +1,35 @@
+<div *ngFor="let item of contenido[0]">
+    <div *ngIf="(item.tipo === 'texto')">
+        <p>{{item.texto1}}</p>
+        <div *ngIf="item.lista">
+            <ul *ngFor="let lista of item.lista">
+                <li><strong>{{lista[0]}}</strong>{{lista[1]}}</li>
+            </ul>
+        </div>
+        <p>{{item.texto2}}</p>
+    </div>
+    <div *ngIf="(item.tipo === 'imagen')">
+        <div class="post-preview"><img src="{{item.texto1 | imagegeneral}}" alt="article" class="img-fluid" /></div>
+    </div>
+    <div *ngIf="(item.tipo === 'cita')">
+        <blockquote class="blockquote">
+            <p>{{item.texto1}}</p>
+            <footer class="blockquote-footer">{{item.texto2}}</footer>
+        </blockquote>
+    </div>
+    <div *ngIf="(item.tipo === 'orderlist')">
+        <p>{{item.texto1}}</p>
+        <div *ngIf="item.lista">
+            <ol>
+                <li *ngFor="let lista of item.lista"><strong>{{lista[0]}}</strong>{{lista[1]}}</li>
+            </ol>
+        </div>
+        <p>{{item.texto2}}</p>
+    </div>
+    <div *ngIf="(item.tipo === 'subtitulo')">
+        <br>
+        <h6><strong>{{item.texto1}}</strong></h6>
+        <p>{{item.texto2}}</p>
+    </div>
+</div>
+<br>

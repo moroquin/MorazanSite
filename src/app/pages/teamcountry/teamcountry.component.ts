@@ -1,14 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { InfoProyectoService } from '../../services/info-proyecto.service';
-
-interface equipo {
-  nombre: string;
-  titulo: string;
-  rol: string;
-  img: string;
-  descripcion: string;
-}
+import {  miembro } from '../../shared/interfaces/teamInterface';
+import {propiedadesTitulo }  from '../../shared/interfaces/tituloInterface';
 
 @Component({
   selector: 'app-teamcountry',
@@ -16,13 +10,13 @@ interface equipo {
   styleUrls: ['./teamcountry.component.css'],
 })
 export class TeamcountryComponent implements OnInit {
-  propiedades = {
+  propiedades:propiedadesTitulo = {
     titulo: 'MORAZAN WORK TEAM',
     subtitulo:
       'The work team is made up of students and professionals from Honduras, Costa Rica and Guatemala.',
     mapa: false,
   };
-  team: equipo[];
+  team: miembro[];
   country: string;
 
   constructor(

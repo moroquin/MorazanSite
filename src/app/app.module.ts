@@ -20,6 +20,11 @@ import { ImagelogoPipe } from './pipes/imagelogo.pipe';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { ImagegeneralPipe } from './pipes/imagegeneral.pipe';
 import { AboutComponent } from './pages/about/about.component';
+import { PostComponent } from './shared/post/post.component';
+import { PostContentComponent } from './shared/post/post-content/post-content.component';
+import { PostSidebarComponent } from './shared/post/post-sidebar/post-sidebar.component';
+import { PostCommentComponent } from './shared/post/post-comment/post-comment.component';
+
 
 @NgModule({
   declarations: [
@@ -40,6 +45,10 @@ import { AboutComponent } from './pages/about/about.component';
     SidebarComponent,
     ImagegeneralPipe,
     AboutComponent,
+    PostComponent,
+    PostContentComponent,
+    PostSidebarComponent,
+    PostCommentComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

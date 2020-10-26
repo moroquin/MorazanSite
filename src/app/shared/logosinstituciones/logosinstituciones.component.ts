@@ -7,19 +7,20 @@ import { InfoProyectoService } from '../../services/info-proyecto.service';
   styleUrls: ['./logosinstituciones.component.css'],
 })
 export class LogosinstitucionesComponent implements OnInit {
-   @Input('heightlogo') heightlogo: number;
+  @Input() heightlogo: number;
 
   logos: string[][];
-  
+
   constructor(private info: InfoProyectoService) {
     this.logos = info.getLogos();
   }
 
   ngOnInit(): void {
-    console.log(this.heightlogo);
-    if (!this.heightlogo)
+    //console.log(this.heightlogo);
+    if (!this.heightlogo) {
       this.heightlogo = 30;
-    
+      
+    }
+    this.heightlogo = 30;
   }
 }
- 
