@@ -6,6 +6,12 @@ export interface miembro {
   img: string;
   titulo: string;
   descripcion: string;
+  descripcionresumen:string;
+  representante:boolean;
+  id: number;
+
+
+
 }
 
 export interface institucion {

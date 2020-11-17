@@ -19,7 +19,7 @@
 
                         <div class="row pt-2">
                             <div class="item" *ngFor="let member of institucion.miembros">
-                                <div class="border single-review-wrap bg-white p-4 m-3">
+                                <div class="border single-review-wrap bg-white p-4 m-3" *ngIf="member.representante">
                                     <div class="review-body">
                                         <h5>{{member.cargo}}</h5>
                                         <p>{{member.rol}}</p>

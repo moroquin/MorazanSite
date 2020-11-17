@@ -14,11 +14,11 @@
                     <div class="blog-content-wrap p-4">
 
                         <div class="article-heading">
-                            <h3 class="h5 mb-0"> <i>{{member.titulo}}</i>{{member.nombre}}</h3>
+                            <h3 class="h5 mb-0"> <i>{{member.titulo}}</i> - {{member.nombre}}</h3>
                             <span> {{member.rol}}</span>
                         </div>
                         <span class="border-shape my-3"></span>
-                        <p>{{member.descripcion}}</p>
+                        <p>{{member.descripcionresumen | slice:0:110}}</p>
 
 
                         <div class="article-footer d-flex align-items-center justify-content-between">
